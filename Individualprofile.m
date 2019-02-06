@@ -491,11 +491,11 @@ function homosexualnobutton_Callback(hObject, eventdata, handles)
 
 % Hint: get(hObject,'Value') returns toggle state of homosexualnobutton
 % We need to identify and receive the homosexual no button
-h' = get(handles.homosexualnobutton,'String')
+h = get(handles.homosexualnobutton,'String')
 % This sets the program so that pressing the homosexual no button means extraction of
 % all males and females within the dataset that are not homosexual.
 % The if function evaluates the expression and executes it when it is true.
-if set(handles.homosexualnobutton,'String',h')
+if set(handles.homosexualnobutton,'String',h)
     homomatch1 = find(Homo==0 & Gender==1| Homo==0 & Gender==0)
 end
 end
