@@ -29,7 +29,7 @@ ethnicity= randi([1,3],1,1000)
 haircolour= randi([1,4],1,1000)
 
 %%generating a vector of length 1000 containing numbers 20 to 120, where it
-%%replicates incomes £20,000 to £120,000 per annum.
+%%replicates incomes ï¿½20,000 to ï¿½120,000 per annum.
 income= randi([20,120],1,1000)
 
 %%generating a vector of length 1000 containing numbers 4.7 to 6.7, where it
@@ -79,7 +79,7 @@ prefeth= randi([1,3],1,1000)
 prefhaircolour= randi([1,4],1,1000)
 
 %%generating a vector of length 1000 for an individuals income preference, where it
-%%replicates incomes £20,000 to £120,000 per annum.
+%%replicates incomes ï¿½20,000 to ï¿½120,000 per annum.
 prefincome= randi([20,120],1,1000)
 
 %%generating a vector of length 1000 for an individuals height preference, where it
@@ -96,7 +96,7 @@ preflocation= randi([1,5],1,1000)
 
 %% Extract 1000 variations of names, generating a vector length 1000
 filename = '1000names.xlsx';
-A = readtable('/Users/joshgilbert/Documents/1000names.xlsx');
+A = readtable(filename);
 names = A.Names
 
 function varargout = Individualprofile(varargin)
